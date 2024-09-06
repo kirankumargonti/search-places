@@ -1,0 +1,41 @@
+.limit-input {
+  display: flex;
+  align-items: center;
+}
+
+.limit-input label {
+  margin-right: 0.5rem;
+}
+
+.limit-input input {
+  width: 50px;
+  height: 38px;
+  padding: 6px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.limit-input input:focus {
+  border-color: var(--focus-color);
+  box-shadow: 0 0 0 3px rgba(121, 82, 179, 0.25);
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .limit-input {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .limit-input label {
+    margin-bottom: 0.25rem;
+  }
+}
+
+@media (max-width: 300px) {
+  .limit-input input {
+    width: 100%;
+    max-width: 100px;
+  }
+}
